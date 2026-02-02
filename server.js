@@ -12,7 +12,6 @@ app.post("/login",(req,res) =>{
     res.sendFile(__dirname + "/mypages/Home.html")
 });
 
-
 app.use(function (req,res,next){
     if(req.session.username){
         next();
